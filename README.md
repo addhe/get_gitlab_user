@@ -12,8 +12,8 @@ This Go script fetches user data from a GitLab instance and exports it to a CSV 
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/addhe/get_gitlab_user.git
+    cd get_gitlab_user
     ```
 
 2. Set environment variables:
@@ -24,15 +24,19 @@ This Go script fetches user data from a GitLab instance and exports it to a CSV 
     Example:
 
     ```bash
-    export GITLAB_TOKEN=<your-gitlab-token>
-    export GITLAB_URL=https://gitlab.example.com
+    export GITLAB_TOKEN="<your-gitlab-token>"
+    export GITLAB_URL="https://gitlab.example.com"
     ```
 
-3. Build and run the script:
+3. Build or run the script:
 
     ```bash
     go build
     ./<executable-name>
+    ```
+
+    ```
+    go run get_gitlab_user.go
     ```
 
 ## Functionality
